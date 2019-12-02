@@ -15,8 +15,8 @@ import math
 
 # In[75]:
 
-
-csv_file = open("./abe_255-2000.csv", "r", encoding="utf-8", errors="", newline="" )
+filename = "./abe_255-2000.csv"
+csv_file = open(filename, "r", encoding="utf-8", errors="", newline="" )
 f = csv.reader(csv_file, delimiter=",", doublequote=True, lineterminator="\r\n", quotechar='"', skipinitialspace=True)
 # csvにheaderが2つあるのでその分を飛ばす
 next(f)
